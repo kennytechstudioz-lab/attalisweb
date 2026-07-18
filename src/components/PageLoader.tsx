@@ -43,7 +43,7 @@ export default function PageLoader() {
 
         <div className="relative h-16 w-56 animate-pulse select-none">
           <Image
-            src="/DeltaLogo.png"
+            src="/AttalisLogo.png"
             alt="Attalis Capital Logo"
             fill
             className="object-contain"
@@ -59,7 +59,7 @@ export default function PageLoader() {
 
         <div className="flex flex-col gap-1.5 items-center mt-2">
           <span className="text-[10px] text-neutral-400 font-extrabold uppercase tracking-[0.25em] animate-pulse">
-            Securing Sustainable Agricultural Future
+            Securing Clean Energy Future
           </span>
           <span className="text-[9px] text-[#e4c126]/60 font-bold uppercase tracking-wider">
             Verifying Secured Portals...
