@@ -11,6 +11,6 @@ cp -r public .next/standalone/
 cp -r .next/static .next/standalone/.next/
 
 # Restart/Start standalone server using PM2
-pm2 restart .next/standalone/server.js --name "attalis-web" || pm2 start .next/standalone/server.js --name "attalis-web"
+pm2 restart "attalis-web" || pm2 start .next/standalone/server.js --name "attalis-web"
 
 echo "Attalis Web deployed successfully!"
