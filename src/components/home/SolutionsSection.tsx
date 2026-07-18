@@ -141,7 +141,7 @@ export default function SolutionsSection() {
 
             {/* Paragraph copy */}
             <p className="text-sm sm:text-base text-white/70 leading-relaxed max-w-xl">
-              Attalis Capital brings institutional-grade investment infrastructure to individual and corporate investors worldwide. Our integrated approach combines mechanized crop cultivation, efficient supply distribution, and strategic farming partnerships — delivering consistent returns backed by real, tangible agricultural assets.
+              Attalis Capital SA brings institutional-grade investment infrastructure to individual and corporate investors worldwide. Our integrated approach combines high-efficiency refining, disciplined crude production, and proven project management — delivering consistent returns backed by real, tangible energy assets.
             </p>
 
             {/* Discover More CTA Button */}
@@ -158,22 +158,22 @@ export default function SolutionsSection() {
           {/* Right Column: 2x2 Grid of Dotted Dividers & Donut Charts */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-0 relative">
             
-            {/* Donut Chart 1 (Crop Production) */}
+            {/* Donut Chart 1 (Refining Capacity) */}
             <div className="border-b border-white/10 sm:border-r">
               <DonutChart
                 percentage={75}
-                label="Crop Production"
-                description="Our fields operate at peak agricultural yield, cultivating maize and agro-commodities using precision farming with minimal waste."
+                label="Refining Capacity"
+                description="Our refineries operate at peak throughput, converting crude reserves into high-value energy products with minimal waste."
                 inView={inView}
               />
             </div>
 
-            {/* Donut Chart 2 (Supply & Distribution) */}
+            {/* Donut Chart 2 (Crude Oil Production) */}
             <div className="border-b border-white/10">
               <DonutChart
                 percentage={87}
-                label="Supply & Distribution"
-                description="Highly optimized supply networks ensure fresh produce is transported directly from farms to buyers, cutting post-harvest losses."
+                label="Crude Oil Production"
+                description="Above-industry-average extraction rates sustained through advanced drilling technology and field optimisation."
                 inView={inView}
               />
             </div>

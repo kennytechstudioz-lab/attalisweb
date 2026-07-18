@@ -34,8 +34,8 @@ export default function ServicesSection() {
       ),
     },
     {
-      title: "Agricultural Assets",
-      description: "Invest in high-yield agricultural assets including automated greenhouses, mechanized crop fields, and smart cold-chain logistics.",
+      title: "Clean Energy Assets",
+      description: "Invest in the future through solar farms, wind fields, and battery storage infrastructure — high-yield assets accelerating the global energy transition.",
       icon: (
         <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <circle cx="12" cy="12" r="4" />
@@ -91,7 +91,7 @@ export default function ServicesSection() {
           {/* Right Sub-text block */}
           <div className="lg:col-span-6 pt-2 lg:pt-4">
             <p className="text-sm sm:text-base text-neutral-500 leading-relaxed max-w-xl">
-              Attalis Capital provides a comprehensive suite of structured investment services built to grow your wealth steadily. From diversified portfolio management to daily dividend payouts, we deliver transparent, high-yield solutions tailored to every investor.
+              Attalis Capital SA provides a comprehensive suite of structured investment services built to grow your wealth steadily. From diversified portfolio management to daily dividend payouts, we deliver transparent, high-yield solutions tailored to every investor.
             </p>
           </div>
         </div>

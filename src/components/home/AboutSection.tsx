@@ -1,13 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import VideoModal from "./VideoModal";
 
 interface AboutSectionProps {
   hideReadMore?: boolean;
+  certificateUrl?: string;
 }
 
-export default function AboutSection({ hideReadMore = false }: AboutSectionProps) {
+export default function AboutSection({ hideReadMore = false, certificateUrl }: AboutSectionProps) {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
     <section className="relative w-full bg-white text-neutral-900 py-16 md:py-24 overflow-hidden">
@@ -21,17 +24,34 @@ export default function AboutSection({ hideReadMore = false }: AboutSectionProps
             <div className="absolute -left-6 -top-6 -right-6 -bottom-6 bg-[repeating-linear-gradient(45deg,#f3f4f6,#f3f4f6_1.5px,transparent_1.5px,transparent_10px)] -z-10 rounded-lg opacity-80" />
 
             <div
-              className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-2xl border border-neutral-100/80 bg-neutral-900 group"
+              onClick={() => setIsVideoOpen(true)}
+              className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-2xl border border-neutral-100/80 bg-neutral-900 group cursor-pointer"
             >
-              <Image
-                src="/images/farmers_harvesting.png"
-                alt="Farmers harvesting crop"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                priority
+              {/* Ambient Looping Video */}
+              <video
+                src="/Attalis Capital.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300" />
+              {/* Subtle Dark Overlay */}
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/35 transition-colors duration-300" />
+
+              {/* Centered Glowing Pulsing Play Button */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-[#e4c126] text-black shadow-lg animate-pulse-glow hover:scale-110 transition-transform duration-300">
+                  <svg className="w-8 h-8 fill-current ml-1" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+
+              {/* Video Badge */}
+              <div className="absolute bottom-4 left-4 bg-black/75 backdrop-blur-md text-white font-extrabold text-[10px] uppercase tracking-wider py-1.5 px-3 rounded border border-white/10">
+                Play Showcase
+              </div>
             </div>
 
             {/* Guarantee Text */}
@@ -40,6 +60,27 @@ export default function AboutSection({ hideReadMore = false }: AboutSectionProps
                 &quot;100% Capital Guarantee &amp; Insurance&quot;
               </h4>
             </div>
+
+            {/* Company Certificate Portrait Image */}
+            {certificateUrl && (
+              <div className="mt-8 flex flex-col gap-3 items-center lg:items-start w-full">
+                <span className="text-[10px] text-neutral-400 font-extrabold uppercase tracking-wider">Company Certificate</span>
+                <a
+                  href={certificateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative w-full max-w-[240px] aspect-[1/1.414] rounded-lg overflow-hidden border border-neutral-200/80 shadow-md bg-white group hover:shadow-xl hover:border-[#528574] transition-all duration-300 flex items-center justify-center cursor-pointer"
+                >
+                  <Image
+                    src={certificateUrl}
+                    alt="Company Certificate"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/5 group-hover:bg-black/15 transition-colors duration-300" />
+                </a>
+              </div>
+            )}
           </div>
 
           {/* Right Column: Text / Info Panel */}
@@ -61,7 +102,7 @@ export default function AboutSection({ hideReadMore = false }: AboutSectionProps
 
               {/* Body Description */}
               <p className="text-sm sm:text-base text-neutral-600 leading-relaxed mb-8">
-                Attalis Capital is a forward-thinking investment firm dedicated to delivering consistent, high-yield returns to investors worldwide. With a diversified portfolio spanning clean energy, real assets, and structured financial instruments, we have built a proven track record of profitable performance that continues to grow year after year.
+                Attalis Capital SA is a forward-thinking investment firm dedicated to delivering consistent, high-yield returns to investors worldwide. With a diversified portfolio spanning clean energy, real assets, and structured financial instruments, we have built a proven track record of profitable performance that continues to grow year after year.
               </p>
 
               {/* Bottom Cards / Lists */}
@@ -138,6 +179,11 @@ export default function AboutSection({ hideReadMore = false }: AboutSectionProps
         </div>
       </div>
 
+      <VideoModal
+        isOpen={isVideoOpen}
+        onClose={() => setIsVideoOpen(false)}
+        videoSrc="/Attalis Capital.mp4"
+      />
     </section>
   );
 }

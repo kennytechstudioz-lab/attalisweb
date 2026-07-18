@@ -67,9 +67,9 @@ export default function Footer() {
                 ))
               ) : (
                 <>
-                  <li><Link href="/projects" className="hover:text-[#e4c126] transition-colors">Crop Production</Link></li>
-                  <li><Link href="/projects" className="hover:text-[#e4c126] transition-colors">Supply & Logistics</Link></li>
-                  <li><Link href="/projects" className="hover:text-[#e4c126] transition-colors">Bio-Fertilizers</Link></li>
+                  <li><Link href="/projects" className="hover:text-[#e4c126] transition-colors">Clean Infrastructure</Link></li>
+                  <li><Link href="/projects" className="hover:text-[#e4c126] transition-colors">Carbon Sequestration</Link></li>
+                  <li><Link href="/projects" className="hover:text-[#e4c126] transition-colors">Crude Refining</Link></li>
                 </>
               )}
             </ul>
@@ -104,10 +104,10 @@ export default function Footer() {
 
           {/* Column 4: Brand Logo, Copy & Address */}
           <div className="lg:col-span-4 flex flex-col gap-6">
-            {/* Delta Icon */}
-            <div className="relative h-[52px] w-[52px]">
+            {/* Attalis Capital Logo */}
+            <div className="relative h-[52px] w-[187px]">
               <Image
-                src="/DeltaIcon.png"
+                src="/AttalisLogo.png"
                 alt="Attalis Capital"
                 fill
                 className="object-contain object-left brightness-0 invert"

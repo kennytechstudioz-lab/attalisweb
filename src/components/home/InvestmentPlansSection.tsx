@@ -57,7 +57,7 @@ export default function InvestmentPlansSection() {
           </h2>
           <div className="w-12 h-1 bg-[#e4c126] mt-3" />
           <p className="text-sm text-neutral-500 max-w-2xl leading-relaxed mt-4">
-            Select an asset classification tier optimized for your capital yield. All funds are backed by physical agricultural reserves, modern machinery assets, and comprehensive crop insurance.
+            Select an asset classification tier optimized for your capital yield. All funds are backed by physical oil reserves, grid distributions, and carbon offset units.
           </p>
         </div>
 

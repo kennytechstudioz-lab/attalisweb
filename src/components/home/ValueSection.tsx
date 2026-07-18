@@ -69,12 +69,12 @@ export default function ValueSection() {
 
             {/* Main Title */}
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-neutral-900 tracking-tight leading-[1.15]">
-              Promoting sustainable agricultural production
+              Promoting responsible use of petroleum resources
             </h3>
 
             {/* Paragraph Description */}
             <p className="text-sm sm:text-base text-neutral-600 leading-relaxed max-w-xl">
-              At Attalis Capital, we believe that agricultural resources, when managed with discipline and foresight, can serve as a powerful foundation for sustainable wealth creation. Our operations are guided by strict environmental standards, eco-friendly farming practices, and a commitment to maximizing crop yield — for our investors, local farming communities, and the planet. We don't just cultivate value; we engineer it responsibly, ensuring long-term yield without compromising ecological integrity.
+              At Attalis Capital SA, we believe that petroleum resources, when managed with discipline and foresight, can serve as a powerful foundation for sustainable wealth creation. Our operations are guided by strict environmental standards, responsible extraction practices, and a commitment to maximising every barrel's return — for our investors and for the planet. We don't just extract value; we engineer it responsibly, ensuring long-term yield without compromising ecological integrity.
             </p>
 
             <div className="w-full h-[1px] bg-neutral-300/60 my-2" />

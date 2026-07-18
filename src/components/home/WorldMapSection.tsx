@@ -10,8 +10,9 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-  { target: 20, suffix: "+", label: "Years of Experience" },
-  { target: 70, suffix: "M+", label: "Investors Served" },
+  { target: 10, suffix: "+", label: "Years of Experience" },
+  { target: 13, suffix: "", label: "Offices Worldwide" },
+  { target: 17, suffix: "K", label: "Investors Served" },
 ];
 
 function useCountUp(target: number, triggered: boolean, duration = 1800) {
@@ -90,11 +91,11 @@ export default function WorldMapSection() {
             </h3>
 
             <p className="text-sm sm:text-base text-neutral-600 leading-relaxed max-w-xl">
-              Attalis Capital operates globally with offices across North America, South Africa, and Europe — bringing institutional-grade investment opportunities to investors worldwide and continuously expanding our reach into high-growth markets.
+              Attalis Capital SA operates globally with offices across North America, South Africa, and Europe — bringing institutional-grade investment opportunities to investors worldwide and continuously expanding our reach into high-growth markets.
             </p>
 
             {/* Statistics Cards Row */}
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 mt-4">
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-4">
               {stats.map((stat, index) => (
                 <StatCard key={index} stat={stat} triggered={triggered} />
               ))}

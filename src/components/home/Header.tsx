@@ -81,7 +81,7 @@ export default function Header() {
             <Link href="/" className="flex items-center group">
               <div className="relative h-[52px] w-[187px]">
                 <Image
-                  src="/DeltaLogo.png"
+                  src="/AttalisLogo.png"
                   alt="Attalis Capital"
                   fill
                   className="object-contain object-left"
@@ -239,7 +239,7 @@ export default function Header() {
             >
               <div className="relative h-[52px] w-[187px]">
                 <Image
-                  src="/DeltaLogo.png"
+                  src="/AttalisLogo.png"
                   alt="Attalis Capital"
                   fill
                   className="object-contain object-left brightness-0 invert"

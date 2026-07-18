@@ -201,7 +201,7 @@ export default function HeroCarousel() {
       <VideoModal
         isOpen={isVideoOpen}
         onClose={() => setIsVideoOpen(false)}
-        videoSrc="/Dominion.mp4"
+        videoSrc="/Attalis Capital.mp4"
       />
     </section>
   );

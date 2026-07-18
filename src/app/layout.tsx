@@ -15,23 +15,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Attalis Capital | Secure Agricultural Investment Platform",
+    default: "Attalis Capital | Secure Oil & Gas Investment Platform",
     template: "%s | Attalis Capital"
   },
-  description: "Attalis Capital is a world-class sustainable agricultural investment and production company. Secure robust daily compound returns from scalable crop cultivation, agro-commodities distribution, and farm logistics directly through our secure, high-yield digital investment platform.",
-  keywords: ["Attalis Capital", "Agricultural Investment", "Smart Farming Platform", "Daily Yield returns", "Crop Cultivation", "Agro Commodities", "Secure yield platform", "sustainable agriculture", "daily farm returns"],
+  description: "Attalis Capital is a world-class Oil and Gas energy company. Secure robust daily compound returns from managed crude oil tranches, natural gas pipelines, and clean-energy transitions directly through our secure, high-yield digital investment platform.",
+  keywords: ["Attalis Capital", "Attalis Capital", "Oil and Gas Investment", "Energy Invest Platform", "Daily Yield returns", "Crude Oil Tranches", "Natural Gas Investment", "Passive energy returns", "Secure yield platform", "sustainable energy investment", "daily oil returns"],
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title: "Attalis Capital | Secure Agricultural Investment Platform",
-    description: "Attalis Capital is a world-class sustainable agricultural investment and production company. Secure robust daily compound returns from scalable crop cultivation, agro-commodities distribution, and farm logistics directly through our secure, high-yield digital investment platform.",
-    url: "https://deltagreenagro.org",
+    title: "Attalis Capital | Secure Oil & Gas Investment Platform",
+    description: "Attalis Capital is a world-class Oil and Gas energy company. Secure robust daily compound returns from managed crude oil tranches, natural gas pipelines, and clean-energy transitions directly through our secure, high-yield digital investment platform.",
+    url: "https://dominiongroup.online",
     siteName: "Attalis Capital",
     images: [
       {
-        url: "/DeltaLogo.png",
+        url: "/AttalisLogo.png",
         width: 800,
         height: 600,
         alt: "Attalis Capital",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Attalis Capital | Secure Agricultural Investment Platform",
-    description: "Attalis Capital is a world-class sustainable agricultural investment and production company. Secure robust daily compound returns from scalable crop cultivation, agro-commodities distribution, and farm logistics directly through our secure, high-yield digital investment platform.",
-    images: ["/DeltaLogo.png"],
+    title: "Attalis Capital | Secure Oil & Gas Investment Platform",
+    description: "Attalis Capital is a world-class Oil and Gas energy company. Secure robust daily compound returns from managed crude oil tranches, natural gas pipelines, and clean-energy transitions directly through our secure, high-yield digital investment platform.",
+    images: ["/AttalisLogo.png"],
   },
 };
 

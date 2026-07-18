@@ -47,14 +47,14 @@ export default function ProjectsSection() {
               Our Awesome Projects
             </span>
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-neutral-900 tracking-tight leading-[1.15] max-w-xl">
-              We Manage Sustainable Agriculture Projects
+              We Take All Related Oil & Gas Projects
             </h3>
           </div>
 
           <div className="lg:col-span-6 flex flex-col sm:flex-row gap-6 items-start pt-2 lg:pt-8">
             <div className="flex-1">
               <p className="text-sm sm:text-base text-neutral-500 leading-relaxed max-w-xl">
-                We invest in scalable crop production, distribution networks, and smart farming initiatives. From automated maize cultivation to advanced storage hubs, our projects are designed to ensure food security and deliver premium returns.
+                We invest in a diverse portfolio of high-impact energy projects worldwide. From solar grids and wind farms to sustainable energy infrastructure, our projects are selected to deliver maximum environmental benefit alongside stable, long-term financial returns for our global investors.
               </p>
             </div>
             <div className="flex-shrink-0">
