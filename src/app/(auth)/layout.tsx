@@ -85,7 +85,7 @@ export default function AuthLayout({
 
         {/* Small branding watermark */}
         <div className="absolute bottom-8 left-16 z-20 text-xs text-white/35 font-light">
-          © {new Date().getFullYear()} Delta Green Agro All Rights Reserved.
+          © {new Date().getFullYear()} Attalis Capital All Rights Reserved.
         </div>
       </div>
 

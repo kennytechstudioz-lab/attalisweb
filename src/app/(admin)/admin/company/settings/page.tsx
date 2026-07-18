@@ -128,7 +128,7 @@ export default function AdminSettingsPage() {
       <div className="flex flex-col gap-1.5 bg-[#13151a] p-6 border border-neutral-800/80 rounded">
         <h1 className="text-xl md:text-2xl font-black text-white tracking-tight">System Settings</h1>
         <p className="text-xs text-neutral-400 font-medium">
-          Configure Delta Green Agro brand parameters, contact channels, and signup user onboarding rules.
+          Configure Attalis Capital brand parameters, contact channels, and signup user onboarding rules.
         </p>
       </div>
 
@@ -169,7 +169,7 @@ export default function AdminSettingsPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="flex flex-col gap-1.5">
                   <label className="text-[10px] text-neutral-400 font-extrabold uppercase tracking-wider">Company Name *</label>
-                  <input type="text" required value={companyName} onChange={(e) => setCompanyName(e.target.value)} className={inputCls} placeholder="Delta Green Agro" />
+                  <input type="text" required value={companyName} onChange={(e) => setCompanyName(e.target.value)} className={inputCls} placeholder="Attalis Capital" />
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-[10px] text-neutral-400 font-extrabold uppercase tracking-wider">Domain Name *</label>
@@ -189,7 +189,7 @@ export default function AdminSettingsPage() {
                 </div>
                 <div className="flex flex-col gap-1.5 lg:col-span-3">
                   <label className="text-[10px] text-neutral-400 font-extrabold uppercase tracking-wider">Company Small Description *</label>
-                  <textarea required rows={3} value={description} onChange={(e) => setDescription(e.target.value)} className={`${inputCls} resize-none`} placeholder="Delta Green Agro is a global leader in sustainable agricultural investments..." />
+                  <textarea required rows={3} value={description} onChange={(e) => setDescription(e.target.value)} className={`${inputCls} resize-none`} placeholder="Attalis Capital is a global leader in sustainable agricultural investments..." />
                 </div>
               </div>
             </div>

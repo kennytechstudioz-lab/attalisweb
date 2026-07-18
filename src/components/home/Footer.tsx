@@ -108,7 +108,7 @@ export default function Footer() {
             <div className="relative h-[52px] w-[52px]">
               <Image
                 src="/DeltaIcon.png"
-                alt="Delta Green Agro"
+                alt="Attalis Capital"
                 fill
                 className="object-contain object-left brightness-0 invert"
               />
