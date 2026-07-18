@@ -138,7 +138,7 @@ export default function DashboardLayout({
         </main>
 
       </div>
-      <SmartsuppWidget />
+      {/* <SmartsuppWidget /> */}
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function HomeLayout({
       </main>
       <Footer />
       <ScrollToTop />
-      <SmartsuppWidget />
+      {/* <SmartsuppWidget /> */}
     </>
   );
 }
